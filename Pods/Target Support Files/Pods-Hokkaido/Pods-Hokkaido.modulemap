@@ -1,0 +1,6 @@
+framework module Pods_Hokkaido {
+  umbrella header "Pods-Hokkaido-umbrella.h"
+
+  export *
+  module * { export * }
+}

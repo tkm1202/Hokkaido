@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A492816D4E657073FA5FC2D /* Pods_Hokkaido.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 810B763A1034291594027615 /* Pods_Hokkaido.framework */; };
 		C34099BC2486839900686DE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34099BB2486839900686DE6 /* AppDelegate.swift */; };
 		C34099BE2486839900686DE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34099BD2486839900686DE6 /* SceneDelegate.swift */; };
 		C34099C02486839900686DE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34099BF2486839900686DE6 /* ViewController.swift */; };
 		C34099C32486839900686DE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34099C12486839900686DE6 /* Main.storyboard */; };
 		C34099C52486839A00686DE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C34099C42486839A00686DE6 /* Assets.xcassets */; };
 		C34099C82486839A00686DE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34099C62486839A00686DE6 /* LaunchScreen.storyboard */; };
+		C3C24290248D3F57007CEFB7 /* RegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C2428F248D3F57007CEFB7 /* RegionViewController.swift */; };
+		C3C24292248D3F8A007CEFB7 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C24291248D3F8A007CEFB7 /* CityViewController.swift */; };
+		C3C24296248D463B007CEFB7 /* LaunchPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C24295248D463B007CEFB7 /* LaunchPhoto.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EDA999E5D237A32498621F8 /* Pods-Hokkaido.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hokkaido.debug.xcconfig"; path = "Target Support Files/Pods-Hokkaido/Pods-Hokkaido.debug.xcconfig"; sourceTree = "<group>"; };
+		607BD8E34D0B0C946E1785A6 /* Pods-Hokkaido.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hokkaido.release.xcconfig"; path = "Target Support Files/Pods-Hokkaido/Pods-Hokkaido.release.xcconfig"; sourceTree = "<group>"; };
+		810B763A1034291594027615 /* Pods_Hokkaido.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hokkaido.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34099B82486839900686DE6 /* Hokkaido.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hokkaido.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34099BB2486839900686DE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C34099BD2486839900686DE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		C34099C42486839A00686DE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C34099C72486839A00686DE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C34099C92486839A00686DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3C2428F248D3F57007CEFB7 /* RegionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionViewController.swift; sourceTree = "<group>"; };
+		C3C24291248D3F8A007CEFB7 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		C3C24295248D463B007CEFB7 /* LaunchPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchPhoto.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A492816D4E657073FA5FC2D /* Pods_Hokkaido.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33EC4B47EF22243F98617F15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EDA999E5D237A32498621F8 /* Pods-Hokkaido.debug.xcconfig */,
+				607BD8E34D0B0C946E1785A6 /* Pods-Hokkaido.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B8FCCB3509290D6421EAFE78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				810B763A1034291594027615 /* Pods_Hokkaido.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C34099AF2486839900686DE6 = {
 			isa = PBXGroup;
 			children = (
 				C34099BA2486839900686DE6 /* Hokkaido */,
 				C34099B92486839900686DE6 /* Products */,
+				33EC4B47EF22243F98617F15 /* Pods */,
+				B8FCCB3509290D6421EAFE78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,8 +90,11 @@
 				C34099BB2486839900686DE6 /* AppDelegate.swift */,
 				C34099BD2486839900686DE6 /* SceneDelegate.swift */,
 				C34099BF2486839900686DE6 /* ViewController.swift */,
+				C3C2428F248D3F57007CEFB7 /* RegionViewController.swift */,
+				C3C24291248D3F8A007CEFB7 /* CityViewController.swift */,
 				C34099C12486839900686DE6 /* Main.storyboard */,
 				C34099C42486839A00686DE6 /* Assets.xcassets */,
+				C3C24295248D463B007CEFB7 /* LaunchPhoto.png */,
 				C34099C62486839A00686DE6 /* LaunchScreen.storyboard */,
 				C34099C92486839A00686DE6 /* Info.plist */,
 			);
@@ -74,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C34099CC2486839B00686DE6 /* Build configuration list for PBXNativeTarget "Hokkaido" */;
 			buildPhases = (
+				4325E38C60AE31FB2D2315CA /* [CP] Check Pods Manifest.lock */,
 				C34099B42486839900686DE6 /* Sources */,
 				C34099B52486839900686DE6 /* Frameworks */,
 				C34099B62486839900686DE6 /* Resources */,
+				0968C4497DC5C62FE3C07B39 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,16 +164,61 @@
 				C34099C82486839A00686DE6 /* LaunchScreen.storyboard in Resources */,
 				C34099C52486839A00686DE6 /* Assets.xcassets in Resources */,
 				C34099C32486839900686DE6 /* Main.storyboard in Resources */,
+				C3C24296248D463B007CEFB7 /* LaunchPhoto.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0968C4497DC5C62FE3C07B39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hokkaido/Pods-Hokkaido-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hokkaido/Pods-Hokkaido-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hokkaido/Pods-Hokkaido-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4325E38C60AE31FB2D2315CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hokkaido-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C34099B42486839900686DE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3C24290248D3F57007CEFB7 /* RegionViewController.swift in Sources */,
+				C3C24292248D3F8A007CEFB7 /* CityViewController.swift in Sources */,
 				C34099C02486839900686DE6 /* ViewController.swift in Sources */,
 				C34099BC2486839900686DE6 /* AppDelegate.swift in Sources */,
 				C34099BE2486839900686DE6 /* SceneDelegate.swift in Sources */,
@@ -282,6 +363,7 @@
 		};
 		C34099CD2486839B00686DE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EDA999E5D237A32498621F8 /* Pods-Hokkaido.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +381,7 @@
 		};
 		C34099CE2486839B00686DE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 607BD8E34D0B0C946E1785A6 /* Pods-Hokkaido.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
