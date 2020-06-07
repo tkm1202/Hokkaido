@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		C3C24290248D3F57007CEFB7 /* RegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C2428F248D3F57007CEFB7 /* RegionViewController.swift */; };
 		C3C24292248D3F8A007CEFB7 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C24291248D3F8A007CEFB7 /* CityViewController.swift */; };
 		C3C24296248D463B007CEFB7 /* LaunchPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C24295248D463B007CEFB7 /* LaunchPhoto.png */; };
+		C3C2429E248D51FB007CEFB7 /* Road.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3C2429D248D51FB007CEFB7 /* Road.jpg */; };
+		C3C242A0248D58DD007CEFB7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C2429F248D58DD007CEFB7 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		C3C2428F248D3F57007CEFB7 /* RegionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionViewController.swift; sourceTree = "<group>"; };
 		C3C24291248D3F8A007CEFB7 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		C3C24295248D463B007CEFB7 /* LaunchPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchPhoto.png; sourceTree = "<group>"; };
+		C3C2429D248D51FB007CEFB7 /* Road.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Road.jpg; sourceTree = "<group>"; };
+		C3C2429F248D58DD007CEFB7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +58,6 @@
 				1EDA999E5D237A32498621F8 /* Pods-Hokkaido.debug.xcconfig */,
 				607BD8E34D0B0C946E1785A6 /* Pods-Hokkaido.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -90,10 +93,12 @@
 				C34099BB2486839900686DE6 /* AppDelegate.swift */,
 				C34099BD2486839900686DE6 /* SceneDelegate.swift */,
 				C34099BF2486839900686DE6 /* ViewController.swift */,
+				C3C2429F248D58DD007CEFB7 /* MapViewController.swift */,
 				C3C2428F248D3F57007CEFB7 /* RegionViewController.swift */,
 				C3C24291248D3F8A007CEFB7 /* CityViewController.swift */,
 				C34099C12486839900686DE6 /* Main.storyboard */,
 				C34099C42486839A00686DE6 /* Assets.xcassets */,
+				C3C2429D248D51FB007CEFB7 /* Road.jpg */,
 				C3C24295248D463B007CEFB7 /* LaunchPhoto.png */,
 				C34099C62486839A00686DE6 /* LaunchScreen.storyboard */,
 				C34099C92486839A00686DE6 /* Info.plist */,
@@ -163,6 +168,7 @@
 			files = (
 				C34099C82486839A00686DE6 /* LaunchScreen.storyboard in Resources */,
 				C34099C52486839A00686DE6 /* Assets.xcassets in Resources */,
+				C3C2429E248D51FB007CEFB7 /* Road.jpg in Resources */,
 				C34099C32486839900686DE6 /* Main.storyboard in Resources */,
 				C3C24296248D463B007CEFB7 /* LaunchPhoto.png in Resources */,
 			);
@@ -218,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3C24290248D3F57007CEFB7 /* RegionViewController.swift in Sources */,
+				C3C242A0248D58DD007CEFB7 /* MapViewController.swift in Sources */,
 				C3C24292248D3F8A007CEFB7 /* CityViewController.swift in Sources */,
 				C34099C02486839900686DE6 /* ViewController.swift in Sources */,
 				C34099BC2486839900686DE6 /* AppDelegate.swift in Sources */,
