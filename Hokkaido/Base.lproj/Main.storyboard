@@ -123,6 +123,63 @@
                     <view key="view" contentMode="scaleToFill" id="ILR-qF-acS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJu-SB-DJY">
+                                <rect key="frame" x="227" y="267" width="126" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="道東">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QTf-aV-g6y" kind="show" id="ZWN-xE-Epr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nte-xr-xpp">
+                                <rect key="frame" x="147" y="180" width="83" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="道北">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="o8a-cX-JVD" kind="show" id="fXE-Fl-yuY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ic6-jB-VJc">
+                                <rect key="frame" x="195" y="368" width="67" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="十勝">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GpF-vc-Wz1" kind="show" id="hIj-Tj-TMd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRW-zf-cpM">
+                                <rect key="frame" x="109" y="267" width="121" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="道央">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tFh-z3-xOM" kind="show" id="wCs-gD-mvC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poj-5M-6rz">
+                                <rect key="frame" x="47" y="336" width="68" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="道南">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7av-ty-taf" kind="show" id="In1-n0-kIF"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="saU-mq-9cS"/>
                     </view>
@@ -132,20 +189,85 @@
             </objects>
             <point key="canvasLocation" x="3237.68115942029" y="128.57142857142856"/>
         </scene>
-        <!--City View Controller-->
-        <scene sceneID="P0a-iT-4Pk">
+        <!--Dohoku View Controller-->
+        <scene sceneID="40H-a6-Xhm">
             <objects>
-                <viewController id="9R6-s0-jLf" customClass="CityViewController" customModule="Hokkaido" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bCl-Eq-FTI">
+                <viewController id="o8a-cX-JVD" customClass="DohokuViewController" customModule="Hokkaido" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o8a-Cu-d4l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="hag-vW-bNT"/>
+                        <viewLayoutGuide key="safeArea" id="kFr-ch-fib"/>
                     </view>
+                    <navigationItem key="navigationItem" id="HTV-BZ-36p"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JoV-qA-snK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Jm-5e-4Ux" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4223.188405797102" y="128.57142857142856"/>
+            <point key="canvasLocation" x="4519" y="-1402"/>
+        </scene>
+        <!--Douou View Controller-->
+        <scene sceneID="OJx-qB-aWC">
+            <objects>
+                <viewController id="tFh-z3-xOM" customClass="DououViewController" customModule="Hokkaido" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8PD-py-cGL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="sT3-KL-uZA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="W0L-8z-w0i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7LU-d0-hwo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4520" y="-631"/>
+        </scene>
+        <!--Doto View Controller-->
+        <scene sceneID="bac-cr-2Au">
+            <objects>
+                <viewController id="QTf-aV-g6y" customClass="DotoViewController" customModule="Hokkaido" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DBX-RK-DlQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="DRc-KI-7vU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="o1u-9R-7fk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="92z-Mf-RXy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4520" y="129"/>
+        </scene>
+        <!--Donan View Controller-->
+        <scene sceneID="JX8-rs-khn">
+            <objects>
+                <viewController id="7av-ty-taf" customClass="DonanViewController" customModule="Hokkaido" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kbe-id-1bt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="QRR-aG-dYE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fbD-qT-KXJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lEU-9k-lei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4464" y="1809"/>
+        </scene>
+        <!--Tokachi View Controller-->
+        <scene sceneID="Jbj-88-C3U">
+            <objects>
+                <viewController id="GpF-vc-Wz1" customClass="TokachiViewController" customModule="Hokkaido" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HDb-Jm-Ngb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Oe3-Xy-iKg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UMO-aJ-BcO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P5y-aS-rO9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4502" y="908"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QIJ-ww-NkS">

@@ -1,14 +1,14 @@
 //
-//  CityViewController.swift
+//  TokachiViewController.swift
 //  Hokkaido
 //
-//  Created by 加藤拓洋 on 2020/06/08.
+//  Created by 加藤拓洋 on 2020/06/09.
 //  Copyright © 2020 TakumiKato. All rights reserved.
 //
 
 import UIKit
 
-class CityViewController: UIViewController {
+class TokachiViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
