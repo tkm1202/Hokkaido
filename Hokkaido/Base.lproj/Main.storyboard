@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Nm-7P-Col">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -38,6 +38,9 @@
                                         <state key="normal" title="始める">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="k2g-Nj-xMN" kind="show" identifier="toMap" id="xrq-mC-9s0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKD-tn-gND" customClass="AnimatableButton" customModule="IBAnimatable">
                                         <rect key="frame" x="0.0" y="90" width="382" height="90"/>
@@ -71,10 +74,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="GhD-qK-zUK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="479.71014492753625" y="122.54464285714285"/>
+            <point key="canvasLocation" x="1389.8550724637682" y="122.54464285714285"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="rY5-BG-UUi">
@@ -83,15 +87,36 @@
                     <view key="view" contentMode="scaleToFill" id="SXP-PO-LAr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAJ-Vk-79D">
+                                <rect key="frame" x="68" y="706" width="279" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="マップを編集">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Atr-4u-UIl" kind="show" identifier="toRegion" id="hy0-Xr-UO0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ここに北海道の地図" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UW-oa-34d">
+                                <rect key="frame" x="68" y="207" width="279" height="381"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="A3m-Rt-Jtk"/>
                     </view>
+                    <navigationItem key="navigationItem" id="NdF-h7-dSs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bnZ-jJ-EyW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1428" y="127"/>
+            <point key="canvasLocation" x="2334.7826086956525" y="126.5625"/>
         </scene>
-        <!--Region View Controller-->
+        <!--地域選択-->
         <scene sceneID="hKG-dx-clr">
             <objects>
                 <viewController id="Atr-4u-UIl" customClass="RegionViewController" customModule="Hokkaido" customModuleProvider="target" sceneMemberID="viewController">
@@ -101,10 +126,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="saU-mq-9cS"/>
                     </view>
+                    <navigationItem key="navigationItem" title="地域選択" id="UWj-Xj-wAW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8m6-Xl-FQ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2328" y="129"/>
+            <point key="canvasLocation" x="3237.68115942029" y="128.57142857142856"/>
         </scene>
         <!--City View Controller-->
         <scene sceneID="P0a-iT-4Pk">
@@ -119,7 +145,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JoV-qA-snK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3314" y="129"/>
+            <point key="canvasLocation" x="4223.188405797102" y="128.57142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QIJ-ww-NkS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Nm-7P-Col" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uSq-vR-yIw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dl8-fl-E2C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IW7-aX-uLe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479.71014492753625" y="122.54464285714285"/>
         </scene>
     </scenes>
     <resources>
