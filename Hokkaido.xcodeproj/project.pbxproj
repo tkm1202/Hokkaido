@@ -18,11 +18,11 @@
 		C3C24296248D463B007CEFB7 /* LaunchPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C24295248D463B007CEFB7 /* LaunchPhoto.png */; };
 		C3C2429E248D51FB007CEFB7 /* Road.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3C2429D248D51FB007CEFB7 /* Road.jpg */; };
 		C3C242A0248D58DD007CEFB7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C2429F248D58DD007CEFB7 /* MapViewController.swift */; };
-		C3C242A2248E901D007CEFB7 /* DohokuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C242A1248E901D007CEFB7 /* DohokuViewController.swift */; };
 		C3C242A4248E9036007CEFB7 /* DotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C242A3248E9036007CEFB7 /* DotoViewController.swift */; };
 		C3C242A6248E9046007CEFB7 /* DonanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C242A5248E9046007CEFB7 /* DonanViewController.swift */; };
 		C3C242A8248E9055007CEFB7 /* TokachiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C242A7248E9055007CEFB7 /* TokachiViewController.swift */; };
 		C3C242AA248E909E007CEFB7 /* DououViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C242A9248E909E007CEFB7 /* DououViewController.swift */; };
+		C3C242B4248EBD13007CEFB7 /* DohokuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C242B3248EBD13007CEFB7 /* DohokuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,11 +41,11 @@
 		C3C24295248D463B007CEFB7 /* LaunchPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchPhoto.png; sourceTree = "<group>"; };
 		C3C2429D248D51FB007CEFB7 /* Road.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Road.jpg; sourceTree = "<group>"; };
 		C3C2429F248D58DD007CEFB7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		C3C242A1248E901D007CEFB7 /* DohokuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DohokuViewController.swift; sourceTree = "<group>"; };
 		C3C242A3248E9036007CEFB7 /* DotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotoViewController.swift; sourceTree = "<group>"; };
 		C3C242A5248E9046007CEFB7 /* DonanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonanViewController.swift; sourceTree = "<group>"; };
 		C3C242A7248E9055007CEFB7 /* TokachiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokachiViewController.swift; sourceTree = "<group>"; };
 		C3C242A9248E909E007CEFB7 /* DououViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DououViewController.swift; sourceTree = "<group>"; };
+		C3C242B3248EBD13007CEFB7 /* DohokuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DohokuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +102,12 @@
 				C34099BD2486839900686DE6 /* SceneDelegate.swift */,
 				C34099BF2486839900686DE6 /* ViewController.swift */,
 				C3C2429F248D58DD007CEFB7 /* MapViewController.swift */,
-				C3C242A1248E901D007CEFB7 /* DohokuViewController.swift */,
 				C3C242A3248E9036007CEFB7 /* DotoViewController.swift */,
 				C3C242A5248E9046007CEFB7 /* DonanViewController.swift */,
 				C3C2428F248D3F57007CEFB7 /* RegionViewController.swift */,
 				C3C242A7248E9055007CEFB7 /* TokachiViewController.swift */,
 				C3C242A9248E909E007CEFB7 /* DououViewController.swift */,
+				C3C242B3248EBD13007CEFB7 /* DohokuViewController.swift */,
 				C34099C12486839900686DE6 /* Main.storyboard */,
 				C34099C42486839A00686DE6 /* Assets.xcassets */,
 				C3C2429D248D51FB007CEFB7 /* Road.jpg */,
@@ -242,8 +242,8 @@
 				C34099C02486839900686DE6 /* ViewController.swift in Sources */,
 				C3C242A6248E9046007CEFB7 /* DonanViewController.swift in Sources */,
 				C34099BC2486839900686DE6 /* AppDelegate.swift in Sources */,
-				C3C242A2248E901D007CEFB7 /* DohokuViewController.swift in Sources */,
 				C3C242A4248E9036007CEFB7 /* DotoViewController.swift in Sources */,
+				C3C242B4248EBD13007CEFB7 /* DohokuViewController.swift in Sources */,
 				C34099BE2486839900686DE6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

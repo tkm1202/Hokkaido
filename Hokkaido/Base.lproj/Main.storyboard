@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -143,7 +144,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="o8a-cX-JVD" kind="show" id="fXE-Fl-yuY"/>
+                                    <segue destination="o8a-cX-JVD" kind="show" identifier="toDohoku" id="Xz4-GC-dbe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ic6-jB-VJc">
@@ -196,14 +197,81 @@
                     <view key="view" contentMode="scaleToFill" id="o8a-Cu-d4l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OrE-tJ-hQQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nBs-tv-sAD">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="zDv-Zl-P88" customClass="DohokuCollectionViewCell" customModule="Hokkaido" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vpP-2P-wyq">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <segue destination="xRT-TP-X7g" kind="show" identifier="toDetailDohoku" id="3YX-Jg-0Fw"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="o8a-cX-JVD" id="82h-Le-Mh7"/>
+                                    <outlet property="delegate" destination="o8a-cX-JVD" id="npC-fm-Qbu"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OrE-tJ-hQQ" firstAttribute="leading" secondItem="kFr-ch-fib" secondAttribute="leading" id="8ll-z2-KOf"/>
+                            <constraint firstItem="kFr-ch-fib" firstAttribute="trailing" secondItem="OrE-tJ-hQQ" secondAttribute="trailing" id="SJc-ld-z3W"/>
+                            <constraint firstItem="kFr-ch-fib" firstAttribute="bottom" secondItem="OrE-tJ-hQQ" secondAttribute="bottom" id="krC-JP-pL9"/>
+                            <constraint firstItem="OrE-tJ-hQQ" firstAttribute="top" secondItem="kFr-ch-fib" secondAttribute="top" id="uUj-Lh-6Ok"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kFr-ch-fib"/>
                     </view>
                     <navigationItem key="navigationItem" id="HTV-BZ-36p"/>
+                    <connections>
+                        <outlet property="collectionView" destination="OrE-tJ-hQQ" id="lUR-8H-Ywb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Jm-5e-4Ux" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4519" y="-1402"/>
+        </scene>
+        <!--Detail Dohoku View Controller-->
+        <scene sceneID="VhK-wp-g04">
+            <objects>
+                <viewController id="xRT-TP-X7g" customClass="DetailDohokuViewController" customModule="Hokkaido" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uQw-G9-86l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pwf-2s-Oa5">
+                                <rect key="frame" x="109" y="205" width="200" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lfd-tM-uBe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GQg-ib-LKH"/>
+                    <connections>
+                        <outlet property="backgroundLabel" destination="Pwf-2s-Oa5" id="wLS-rD-CqK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rXX-GK-v7C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5742.0289855072469" y="-1408.2589285714284"/>
         </scene>
         <!--Douou View Controller-->
         <scene sceneID="OJx-qB-aWC">
