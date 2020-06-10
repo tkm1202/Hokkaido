@@ -34,6 +34,7 @@ class DohokuViewController: UIViewController, UICollectionViewDataSource, UIColl
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let horizontalSpace : CGFloat = 20
         let cellSize : CGFloat = self.view.bounds.width / 3 - horizontalSpace
+        
         return CGSize(width: cellSize, height: cellSize)
     }
  
