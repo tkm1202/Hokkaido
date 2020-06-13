@@ -48,6 +48,7 @@ class ViewController: UIViewController {
         }, completion: { (Bool) in
             //で、アニメーションが終わったらimageViewを消す
             self.imageView.removeFromSuperview()
+            
         })
     }
 
