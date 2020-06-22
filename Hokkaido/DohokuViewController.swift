@@ -27,7 +27,7 @@ class DohokuViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) // 表示するセルを登録(先程命名した"Cell")
-        cell.backgroundColor = .red  // セルの色
+        cell.backgroundColor = .gray  // セルの色
         return cell
     }
  
