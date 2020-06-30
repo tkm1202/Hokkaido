@@ -8,34 +8,55 @@
 
 import UIKit
  
-class DohokuViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+   
     
-    // collection viewのoutlet
-    @IBOutlet var collectionView: UICollectionView!
+    let textArray = ["A市","B市","C市"]
+    
+    @IBOutlet weak var dohokuTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // レイアウトを調整
-        let layout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
-        collectionView.collectionViewLayout = layout
+        dohokuTableView.delegate = self
+        dohokuTableView.dataSource = self
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 18 // 表示するセルの数
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) // 表示するセルを登録(先程命名した"Cell")
-        cell.backgroundColor = .gray  // セルの色
-        return cell
-    }
- 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let horizontalSpace : CGFloat = 20
-        let cellSize : CGFloat = self.view.bounds.width / 3 - horizontalSpace
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        return CGSize(width: cellSize, height: cellSize)
+        navigationController?.isNavigationBarHidden = false
     }
- 
+    
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let nextVC = storyboard?.instantiateViewController(identifier: "toNextDohoku") as! NextDohokuViewController
+        
+        nextVC.cityString = textArray[indexPath.row]
+        navigationController?.pushViewController(nextVC, animated: true)
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return textArray.count
+       }
+
+       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = dohokuTableView.dequeueReusableCell(withIdentifier: "DohokuCell", for: indexPath)
+        cell.textLabel?.text = textArray[indexPath.row]
+        //cell.imageView?.image = UIImage(named: "checkImage")
+           return cell
+       }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return view.frame.size.height/10
+    }
+    
 }
