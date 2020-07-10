@@ -11,6 +11,8 @@ import UIKit
 class NextDohokuViewController: UIViewController {
 
     var cityString = String()
+    var number: Int = 0
+    
     @IBOutlet weak var cityLabel: UILabel!
     
     
@@ -29,7 +31,10 @@ class NextDohokuViewController: UIViewController {
         navigationController?.isNavigationBarHidden = false
     }
     
-    
-
+    @IBAction func pushButton5(){
+        
+        //画面戻る
+        self.dismiss(animated: true, completion: nil)
+    }
   
 }

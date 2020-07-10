@@ -11,7 +11,8 @@ import UIKit
 class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
    
     
-    let textArray = ["A市","B市","C市"]
+    let textArray = ["稚内","名寄","留萌","小樽","久遠","函館","室蘭","札幌","苫小牧","襟裳","帯広","旭川","",""]
+    private let mySections: NSArray = ["道北", "道東","十勝","道央","道南"]
     
     @IBOutlet weak var dohokuTableView: UITableView!
     
@@ -31,8 +32,12 @@ class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return mySections.count
     }
+    //section title
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+           return mySections[section] as? String
+       }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
