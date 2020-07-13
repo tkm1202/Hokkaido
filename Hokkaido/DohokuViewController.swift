@@ -16,6 +16,7 @@ class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     @IBOutlet weak var dohokuTableView: UITableView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,6 +41,7 @@ class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewData
        }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         
         let nextVC = storyboard?.instantiateViewController(identifier: "toNextDohoku") as! NextDohokuViewController
         
