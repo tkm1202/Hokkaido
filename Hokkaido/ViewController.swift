@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var userDefaults = UserDefaults.standard
+    
     var imageView: UIImageView!
 
     override func viewDidLoad() {

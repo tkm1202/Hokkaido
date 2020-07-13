@@ -18,6 +18,12 @@ class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewData
     let DououArray: NSArray = ["室蘭","札幌","旭川"]
     let DonanArray: NSArray = ["小樽","久遠","函館"]
     
+    var DohokuColorArray = Array<Int>(repeating: 0, count:3)
+    var DotoColorArray = Array<Int>(repeating: 0, count:1)
+    var TokachiColorArray = Array<Int>(repeating: 0, count:3)
+    var DououColorArray = Array<Int>(repeating: 0, count:3)
+    var DonanColorArray = Array<Int>(repeating: 0, count:3)
+    
     //let textArray = []
     private let mySections: NSArray = ["道北", "道東","十勝","道央","道南"]
     
@@ -29,6 +35,16 @@ class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewData
         
         dohokuTableView.delegate = self
         dohokuTableView.dataSource = self
+        
+        
+    
+        //0:white--4:red
+        UserDefaults.standard.set(DohokuColorArray, forKey: "Dohoku")
+        UserDefaults.standard.set(DotoColorArray, forKey: "Doto")
+        UserDefaults.standard.set(TokachiColorArray, forKey: "Tokachi")
+        UserDefaults.standard.set(DououColorArray, forKey: "Douou")
+        UserDefaults.standard.set(DonanColorArray, forKey: "Donan")
+        UserDefaults.standard.synchronize()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -63,7 +79,8 @@ class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewData
         }else if indexPath.section == 4{
             nextVC.cityString = DonanArray[indexPath.row] as! String
         }
-        
+        nextVC.cityNumber = indexPath.row
+        nextVC.areaNumber = indexPath.section
         navigationController?.pushViewController(nextVC, animated: true)
         
     }
