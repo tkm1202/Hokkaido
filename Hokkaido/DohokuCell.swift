@@ -12,6 +12,6 @@ class DohokuCell:UITableViewCell {
 
     @IBOutlet weak var regionLabel:UILabel!
     @IBOutlet weak var colorLabel:UILabel!
- 
+   
 
 }
