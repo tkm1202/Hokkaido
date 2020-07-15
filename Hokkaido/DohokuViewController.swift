@@ -35,28 +35,15 @@ class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewData
         dohokuTableView.delegate = self
         dohokuTableView.dataSource = self
         
-        
+        /*
         UserDefaults.standard.register(defaults: ["Dohoku" : Array<Int>(repeating: 0, count:4),
         "Doto" : Array<Int>(repeating: 0, count:5),
         "Tokachi" : Array<Int>(repeating: 0, count:3),
         "Douou" : Array<Int>(repeating: 0, count:4),
         "Donan" : Array<Int>(repeating: 0, count:4)])
+ */
         //0:white--4:red
-        /*
-        UserDefaults.standard.set(DohokuColorArray, forKey: "Dohoku")
-        UserDefaults.standard.set(DotoColorArray, forKey: "Doto")
-        UserDefaults.standard.set(TokachiColorArray, forKey: "Tokachi")
-        UserDefaults.standard.set(DououColorArray, forKey: "Douou")
-        UserDefaults.standard.set(DonanColorArray, forKey: "Donan")
-        UserDefaults.standard.synchronize()
- */
-        
-        /*
-        for i in DohokuColorArray{
-            print("Dohoku: \(i)")
-            let color = cell.colorlabel!
-        }
- */
+      
     }
     
     override func viewWillAppear(_ animated: Bool) {
