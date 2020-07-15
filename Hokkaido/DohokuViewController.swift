@@ -24,7 +24,6 @@ class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewData
     var DououColorArray = Array<Int>(repeating: 0, count:4)
     var DonanColorArray = Array<Int>(repeating: 0, count:4)
     
-    //let textArray = []
     private let mySections: NSArray = ["道北", "道東","十勝","道央","道南"]
     
     @IBOutlet weak var dohokuTableView: UITableView!

@@ -258,6 +258,28 @@
                         <viewLayoutGuide key="safeArea" id="A3m-Rt-Jtk"/>
                     </view>
                     <navigationItem key="navigationItem" id="NdF-h7-dSs"/>
+                    <connections>
+                        <outlet property="abashiriLabel" destination="zCx-dZ-Mhc" id="9TC-IL-erC"/>
+                        <outlet property="asahikawaLabel" destination="7LW-b8-7DE" id="Qzd-S2-GHp"/>
+                        <outlet property="erimoLabel" destination="Gac-Jo-9mc" id="Pc4-3W-N1k"/>
+                        <outlet property="esashiLabel" destination="0hP-kC-2xV" id="w4b-3j-gFz"/>
+                        <outlet property="hakodateLabel" destination="DmS-BP-UgC" id="Aop-7y-DX2"/>
+                        <outlet property="kitamiLabel" destination="Gp9-0m-0on" id="t7e-Tx-Xzt"/>
+                        <outlet property="kudoLabel" destination="Lx5-nB-FGn" id="jGo-VO-ArX"/>
+                        <outlet property="kushiroLabel" destination="E7w-YQ-3Cl" id="oiC-i9-i5K"/>
+                        <outlet property="monbetsuLabel" destination="LDY-ih-Hox" id="EeO-hh-V5g"/>
+                        <outlet property="muroranLabel" destination="BeL-zs-iPe" id="iUI-od-I9v"/>
+                        <outlet property="nayoroLabel" destination="tte-n3-YR2" id="hPz-wB-xK9"/>
+                        <outlet property="nemuroLabel" destination="MnX-SC-l7x" id="t7L-2u-qX6"/>
+                        <outlet property="obihiroLabel" destination="WqQ-ES-gvt" id="tHx-Z9-dk9"/>
+                        <outlet property="otaruLabel" destination="nB3-ni-9vg" id="X6P-CK-TTb"/>
+                        <outlet property="rumoiLabel" destination="jQJ-JF-KIg" id="cWK-NP-Zfx"/>
+                        <outlet property="sapporoLabel" destination="vPx-u1-e65" id="dch-S3-MDQ"/>
+                        <outlet property="shibetsuLabel" destination="Uxa-BS-Bnp" id="Ogl-Zw-gkb"/>
+                        <outlet property="shiretokoLabel" destination="47F-HV-caY" id="SiR-Ea-2aK"/>
+                        <outlet property="tomakomaiLabel" destination="prO-he-hsg" id="s7f-4f-erh"/>
+                        <outlet property="wakkanaiLabel" destination="9OL-Xc-RtW" id="Zmh-AQ-vHh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bnZ-jJ-EyW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
