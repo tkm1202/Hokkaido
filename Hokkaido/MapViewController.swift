@@ -10,6 +10,7 @@ import UIKit
 
 class MapViewController: UIViewController {
     
+    
     @IBOutlet weak var wakkanaiLabel: UILabel!
     @IBOutlet weak var esashiLabel: UILabel!
     @IBOutlet weak var nayoroLabel: UILabel!
@@ -37,6 +38,10 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let regionLabelList = [wakkanaiLabel,nayoroLabel,esashiLabel,monbetsuLabel,shiretokoLabel, abashiriLabel, shibetsuLabel, nemuroLabel,kitamiLabel,erimoLabel, obihiroLabel, kushiroLabel,sapporoLabel,asahikawaLabel , otaruLabel,rumoiLabel,kudoLabel, hakodateLabel,tomakomaiLabel , muroranLabel]
+        
+        regionLabelList.forEach { regionLabelSetting(label: $0!) }
         UserDefaults.standard.register(defaults: ["TotalScore" : 0])
         
         UserDefaults.standard.register(defaults: ["Dohoku" : Array<Int>(repeating: 0, count:4),
@@ -44,6 +49,10 @@ class MapViewController: UIViewController {
                "Tokachi" : Array<Int>(repeating: 0, count:3),
                "Douou" : Array<Int>(repeating: 0, count:4),
                "Donan" : Array<Int>(repeating: 0, count:4)])
+        
+        let totalNum = UserDefaults.standard.integer(forKey: "TotalScore")
+        scoreNum.text = String(totalNum)
+        print(scoreNum.text!)
         // Do any additional setup after loading the view.
     }
     
@@ -51,6 +60,11 @@ class MapViewController: UIViewController {
            super.viewWillAppear(animated)
            
            navigationController?.isNavigationBarHidden = false
+        
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+                  self.navigationController!.navigationBar.shadowImage = UIImage()
+        
+        
         
         let dohokuArray: [UILabel] = [wakkanaiLabel,nayoroLabel,esashiLabel,monbetsuLabel]
         let dotoArray: [UILabel] = [shiretokoLabel, abashiriLabel, shibetsuLabel, nemuroLabel,kitamiLabel]
@@ -80,15 +94,15 @@ class MapViewController: UIViewController {
     func colorAssignment(labelArray: [UILabel],colorArray: [Int]){
         for i in 0..<colorArray.count{
             if colorArray[i] == 0{
-                labelArray[i].backgroundColor = UIColor.gray
+                labelArray[i].backgroundColor = UIColor.gray.withAlphaComponent(0.5)
             }else if colorArray[i] == 1{
-                labelArray[i].backgroundColor = UIColor.blue
+                labelArray[i].backgroundColor = UIColor.blue.withAlphaComponent(0.5)
             }else if colorArray[i] == 2{
-                labelArray[i].backgroundColor = UIColor.green
+                labelArray[i].backgroundColor = UIColor.green.withAlphaComponent(0.5)
             }else if colorArray[i] == 3{
-                labelArray[i].backgroundColor = UIColor.yellow
+                labelArray[i].backgroundColor = UIColor.yellow.withAlphaComponent(0.5)
             }else if colorArray[i] == 4{
-                labelArray[i].backgroundColor = UIColor.red
+                labelArray[i].backgroundColor = UIColor.red.withAlphaComponent(0.5)
             }
         }
     }
@@ -99,5 +113,10 @@ class MapViewController: UIViewController {
         return result
     }
     
+    func regionLabelSetting(label: UILabel){
+        label.layer.cornerRadius = 25
+        label.clipsToBounds = true
+        label.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
+    }
     
 }

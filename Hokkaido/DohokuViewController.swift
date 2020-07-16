@@ -49,6 +49,9 @@ class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewData
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+           self.navigationController!.navigationBar.shadowImage = UIImage()
+        
         navigationController?.isNavigationBarHidden = false
         
         DohokuColorArray = UserDefaults.standard.array(forKey: "Dohoku") as! [Int]
@@ -109,6 +112,14 @@ class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          if let cell = dohokuTableView.dequeueReusableCell(withIdentifier: "DohokuCell") as? DohokuCell {
+            // cellの背景を透過
+            cell.backgroundColor = UIColor.clear
+             // cell内のcontentViewの背景を透過
+            cell.contentView.backgroundColor = UIColor.clear
+            
+            //colorlabelの初期設定
+            regionLabelSetting(label: cell.colorLabel)
+            
             
             if indexPath.section == 0 {
                      //  print("indexPath.section == 0")
@@ -117,15 +128,15 @@ class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewData
                 let color = cell.colorLabel!
                 
                 if DohokuColorArray[indexPath.row] == 0{
-                color.backgroundColor = UIColor.gray
+                color.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
                 }else if DohokuColorArray[indexPath.row] == 1{
-                    color.backgroundColor = UIColor.blue
+                    color.backgroundColor = UIColor.blue.withAlphaComponent(0.5)
                 }else if DohokuColorArray[indexPath.row] == 2{
-                    color.backgroundColor = UIColor.green
+                    color.backgroundColor = UIColor.green.withAlphaComponent(0.5)
                 }else if DohokuColorArray[indexPath.row] == 3{
-                    color.backgroundColor = UIColor.yellow
+                    color.backgroundColor = UIColor.yellow.withAlphaComponent(0.5)
                 }else if DohokuColorArray[indexPath.row] == 4{
-                    color.backgroundColor = UIColor.red
+                    color.backgroundColor = UIColor.red.withAlphaComponent(0.5)
                 }
                        label.text = String(describing: DohokuArray[indexPath.row])
                    }
@@ -134,15 +145,15 @@ class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewData
                        let label = cell.regionLabel!
                 let color = cell.colorLabel!
                                if DotoColorArray[indexPath.row] == 0{
-                               color.backgroundColor = UIColor.gray
+                               color.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
                                }else if DotoColorArray[indexPath.row] == 1{
-                                   color.backgroundColor = UIColor.blue
+                                   color.backgroundColor = UIColor.blue.withAlphaComponent(0.5)
                                }else if DotoColorArray[indexPath.row] == 2{
-                                   color.backgroundColor = UIColor.green
+                                   color.backgroundColor = UIColor.green.withAlphaComponent(0.5)
                                }else if DotoColorArray[indexPath.row] == 3{
-                                   color.backgroundColor = UIColor.yellow
+                                   color.backgroundColor = UIColor.yellow.withAlphaComponent(0.5)
                                }else if DotoColorArray[indexPath.row] == 4{
-                                   color.backgroundColor = UIColor.red
+                                   color.backgroundColor = UIColor.red.withAlphaComponent(0.5)
                                }
                        label.text = String(describing: DotoArray[indexPath.row])
                    }
@@ -151,15 +162,15 @@ class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewData
                       let label = cell.regionLabel!
                 let color = cell.colorLabel!
                                if TokachiColorArray[indexPath.row] == 0{
-                               color.backgroundColor = UIColor.gray
+                               color.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
                                }else if TokachiColorArray[indexPath.row] == 1{
-                                   color.backgroundColor = UIColor.blue
+                                   color.backgroundColor = UIColor.blue.withAlphaComponent(0.5)
                                }else if TokachiColorArray[indexPath.row] == 2{
-                                   color.backgroundColor = UIColor.green
+                                   color.backgroundColor = UIColor.green.withAlphaComponent(0.5)
                                }else if TokachiColorArray[indexPath.row] == 3{
-                                   color.backgroundColor = UIColor.yellow
+                                   color.backgroundColor = UIColor.yellow.withAlphaComponent(0.5)
                                }else if TokachiColorArray[indexPath.row] == 4{
-                                   color.backgroundColor = UIColor.red
+                                   color.backgroundColor = UIColor.red.withAlphaComponent(0.5)
                                }
                       label.text = String(describing: TokachiArray[indexPath.row])
                    }
@@ -168,15 +179,15 @@ class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewData
                let label = cell.regionLabel!
                 let color = cell.colorLabel!
                                if DououColorArray[indexPath.row] == 0{
-                               color.backgroundColor = UIColor.gray
+                               color.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
                                }else if DououColorArray[indexPath.row] == 1{
-                                   color.backgroundColor = UIColor.blue
+                                   color.backgroundColor = UIColor.blue.withAlphaComponent(0.5)
                                }else if DououColorArray[indexPath.row] == 2{
-                                   color.backgroundColor = UIColor.green
+                                   color.backgroundColor = UIColor.green.withAlphaComponent(0.5)
                                }else if DououColorArray[indexPath.row] == 3{
-                                   color.backgroundColor = UIColor.yellow
+                                   color.backgroundColor = UIColor.yellow.withAlphaComponent(0.5)
                                }else if DououColorArray[indexPath.row] == 4{
-                                   color.backgroundColor = UIColor.red
+                                   color.backgroundColor = UIColor.red.withAlphaComponent(0.5)
                                }
                label.text = String(describing: DououArray[indexPath.row])
             }
@@ -185,15 +196,15 @@ class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewData
                let label = cell.regionLabel!
                 let color = cell.colorLabel!
                                if DonanColorArray[indexPath.row] == 0{
-                               color.backgroundColor = UIColor.gray
+                               color.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
                                }else if DonanColorArray[indexPath.row] == 1{
-                                   color.backgroundColor = UIColor.blue
+                                   color.backgroundColor = UIColor.blue.withAlphaComponent(0.5)
                                }else if DonanColorArray[indexPath.row] == 2{
-                                   color.backgroundColor = UIColor.green
+                                   color.backgroundColor = UIColor.green.withAlphaComponent(0.5)
                                }else if DonanColorArray[indexPath.row] == 3{
-                                   color.backgroundColor = UIColor.yellow
+                                   color.backgroundColor = UIColor.yellow.withAlphaComponent(0.5)
                                }else if DonanColorArray[indexPath.row] == 4{
-                                   color.backgroundColor = UIColor.red
+                                   color.backgroundColor = UIColor.red.withAlphaComponent(0.5)
                                }
                label.text = String(describing: DonanArray[indexPath.row])
             }
@@ -208,6 +219,10 @@ class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewData
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return view.frame.size.height/10
     }
-    
+    func regionLabelSetting(label: UILabel){
+           label.layer.cornerRadius = 25
+           label.clipsToBounds = true
+           label.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
+       }
     
 }

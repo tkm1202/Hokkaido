@@ -28,6 +28,9 @@ class NextDohokuViewController: UIViewController {
         super.viewWillAppear(animated)
         
         navigationController?.isNavigationBarHidden = false
+        
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+                  self.navigationController!.navigationBar.shadowImage = UIImage()
     }
     
   

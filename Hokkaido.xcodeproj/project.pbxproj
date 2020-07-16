@@ -11,20 +11,17 @@
 		7618466B24ABE104006B898E /* NextDohokuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618466A24ABE104006B898E /* NextDohokuViewController.swift */; };
 		7645DA0B24B8811400D8AAAD /* hokkaidomap.png in Resources */ = {isa = PBXBuildFile; fileRef = 7645DA0A24B8811400D8AAAD /* hokkaidomap.png */; };
 		7659123524BCB4EF0072B955 /* DohokuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7659123424BCB4EF0072B955 /* DohokuCell.swift */; };
+		76D545A624BF6A7D00F08FE0 /* gomarice_mukasi_mukasi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76D545A524BF695900F08FE0 /* gomarice_mukasi_mukasi.ttf */; };
+		76D545A824BF71FC00F08FE0 /* HowToPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D545A724BF71FC00F08FE0 /* HowToPlayViewController.swift */; };
 		C34099BC2486839900686DE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34099BB2486839900686DE6 /* AppDelegate.swift */; };
 		C34099BE2486839900686DE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34099BD2486839900686DE6 /* SceneDelegate.swift */; };
 		C34099C02486839900686DE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34099BF2486839900686DE6 /* ViewController.swift */; };
 		C34099C32486839900686DE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34099C12486839900686DE6 /* Main.storyboard */; };
 		C34099C52486839A00686DE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C34099C42486839A00686DE6 /* Assets.xcassets */; };
 		C34099C82486839A00686DE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34099C62486839A00686DE6 /* LaunchScreen.storyboard */; };
-		C3C24290248D3F57007CEFB7 /* RegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C2428F248D3F57007CEFB7 /* RegionViewController.swift */; };
 		C3C24296248D463B007CEFB7 /* LaunchPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C24295248D463B007CEFB7 /* LaunchPhoto.png */; };
 		C3C2429E248D51FB007CEFB7 /* Road.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3C2429D248D51FB007CEFB7 /* Road.jpg */; };
 		C3C242A0248D58DD007CEFB7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C2429F248D58DD007CEFB7 /* MapViewController.swift */; };
-		C3C242A4248E9036007CEFB7 /* DotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C242A3248E9036007CEFB7 /* DotoViewController.swift */; };
-		C3C242A6248E9046007CEFB7 /* DonanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C242A5248E9046007CEFB7 /* DonanViewController.swift */; };
-		C3C242A8248E9055007CEFB7 /* TokachiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C242A7248E9055007CEFB7 /* TokachiViewController.swift */; };
-		C3C242AA248E909E007CEFB7 /* DououViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C242A9248E909E007CEFB7 /* DououViewController.swift */; };
 		C3C242B4248EBD13007CEFB7 /* DohokuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C242B3248EBD13007CEFB7 /* DohokuViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +31,8 @@
 		7618466A24ABE104006B898E /* NextDohokuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDohokuViewController.swift; sourceTree = "<group>"; };
 		7645DA0A24B8811400D8AAAD /* hokkaidomap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hokkaidomap.png; sourceTree = "<group>"; };
 		7659123424BCB4EF0072B955 /* DohokuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DohokuCell.swift; sourceTree = "<group>"; };
+		76D545A524BF695900F08FE0 /* gomarice_mukasi_mukasi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gomarice_mukasi_mukasi.ttf; sourceTree = "<group>"; };
+		76D545A724BF71FC00F08FE0 /* HowToPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewController.swift; sourceTree = "<group>"; };
 		810B763A1034291594027615 /* Pods_Hokkaido.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hokkaido.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34099B82486839900686DE6 /* Hokkaido.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hokkaido.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34099BB2486839900686DE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,14 +42,9 @@
 		C34099C42486839A00686DE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C34099C72486839A00686DE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C34099C92486839A00686DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3C2428F248D3F57007CEFB7 /* RegionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionViewController.swift; sourceTree = "<group>"; };
 		C3C24295248D463B007CEFB7 /* LaunchPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchPhoto.png; sourceTree = "<group>"; };
 		C3C2429D248D51FB007CEFB7 /* Road.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Road.jpg; sourceTree = "<group>"; };
 		C3C2429F248D58DD007CEFB7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		C3C242A3248E9036007CEFB7 /* DotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotoViewController.swift; sourceTree = "<group>"; };
-		C3C242A5248E9046007CEFB7 /* DonanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonanViewController.swift; sourceTree = "<group>"; };
-		C3C242A7248E9055007CEFB7 /* TokachiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokachiViewController.swift; sourceTree = "<group>"; };
-		C3C242A9248E909E007CEFB7 /* DououViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DououViewController.swift; sourceTree = "<group>"; };
 		C3C242B3248EBD13007CEFB7 /* DohokuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DohokuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,19 +110,16 @@
 				C34099BB2486839900686DE6 /* AppDelegate.swift */,
 				C34099BD2486839900686DE6 /* SceneDelegate.swift */,
 				C34099BF2486839900686DE6 /* ViewController.swift */,
+				76D545A724BF71FC00F08FE0 /* HowToPlayViewController.swift */,
 				C3C2429F248D58DD007CEFB7 /* MapViewController.swift */,
-				C3C242A3248E9036007CEFB7 /* DotoViewController.swift */,
-				C3C242A5248E9046007CEFB7 /* DonanViewController.swift */,
-				C3C2428F248D3F57007CEFB7 /* RegionViewController.swift */,
 				7659123424BCB4EF0072B955 /* DohokuCell.swift */,
-				C3C242A7248E9055007CEFB7 /* TokachiViewController.swift */,
-				C3C242A9248E909E007CEFB7 /* DououViewController.swift */,
 				C3C242B3248EBD13007CEFB7 /* DohokuViewController.swift */,
 				7618466A24ABE104006B898E /* NextDohokuViewController.swift */,
 				C34099C12486839900686DE6 /* Main.storyboard */,
 				C34099C42486839A00686DE6 /* Assets.xcassets */,
 				C3C2429D248D51FB007CEFB7 /* Road.jpg */,
 				C3C24295248D463B007CEFB7 /* LaunchPhoto.png */,
+				76D545A524BF695900F08FE0 /* gomarice_mukasi_mukasi.ttf */,
 				C34099C62486839A00686DE6 /* LaunchScreen.storyboard */,
 				C34099C92486839A00686DE6 /* Info.plist */,
 			);
@@ -195,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76D545A624BF6A7D00F08FE0 /* gomarice_mukasi_mukasi.ttf in Resources */,
 				C34099C82486839A00686DE6 /* LaunchScreen.storyboard in Resources */,
 				C34099C52486839A00686DE6 /* Assets.xcassets in Resources */,
 				C3C2429E248D51FB007CEFB7 /* Road.jpg in Resources */,
@@ -253,17 +245,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3C242A8248E9055007CEFB7 /* TokachiViewController.swift in Sources */,
-				C3C242AA248E909E007CEFB7 /* DououViewController.swift in Sources */,
-				C3C24290248D3F57007CEFB7 /* RegionViewController.swift in Sources */,
 				C3C242A0248D58DD007CEFB7 /* MapViewController.swift in Sources */,
 				7618466B24ABE104006B898E /* NextDohokuViewController.swift in Sources */,
 				7659123524BCB4EF0072B955 /* DohokuCell.swift in Sources */,
 				C34099C02486839900686DE6 /* ViewController.swift in Sources */,
-				C3C242A6248E9046007CEFB7 /* DonanViewController.swift in Sources */,
 				C34099BC2486839900686DE6 /* AppDelegate.swift in Sources */,
-				C3C242A4248E9036007CEFB7 /* DotoViewController.swift in Sources */,
 				C3C242B4248EBD13007CEFB7 /* DohokuViewController.swift in Sources */,
+				76D545A824BF71FC00F08FE0 /* HowToPlayViewController.swift in Sources */,
 				C34099BE2486839900686DE6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

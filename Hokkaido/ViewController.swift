@@ -58,6 +58,11 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         
         navigationController?.isNavigationBarHidden = true
+        
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+                  self.navigationController!.navigationBar.shadowImage = UIImage()
+        
+        
     }
 
 }

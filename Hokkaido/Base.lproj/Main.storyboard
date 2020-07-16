@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Nm-7P-Col">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Nm-7P-Col">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -35,7 +35,8 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQh-k6-EGC" customClass="AnimatableButton" customModule="IBAnimatable">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="90"/>
                                         <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="始める">
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
+                                        <state key="normal" title="start">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -45,9 +46,13 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKD-tn-gND" customClass="AnimatableButton" customModule="IBAnimatable">
                                         <rect key="frame" x="0.0" y="90" width="382" height="90"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="遊びかた">
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                                        <state key="normal" title="How to play">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="IIl-ut-cIP" kind="presentation" identifier="toHowToPlay" id="Ht5-Q0-Ay1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -57,10 +62,15 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="FlipX"/>
                                 </userDefinedRuntimeAttributes>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="北海道踏破" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVq-D5-bhs">
-                                <rect key="frame" x="164" y="129" width="209" height="134"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVq-D5-bhs">
+                                <rect key="frame" x="140" y="128" width="174" height="56.5"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hokkaido" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HvI-FP-wJb">
+                                <rect key="frame" x="171.5" y="168" width="192.5" height="56.5"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -68,10 +78,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="x2j-HW-PJC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Cop-Xl-iRw"/>
+                            <constraint firstItem="HvI-FP-wJb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Jk2-4n-2Zg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MZn-mo-JuM" secondAttribute="bottom" constant="80" id="MKi-Lh-C8V"/>
                             <constraint firstItem="x2j-HW-PJC" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="SN0-XY-54O"/>
+                            <constraint firstItem="nVq-D5-bhs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Vgw-e5-mxm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HvI-FP-wJb" secondAttribute="trailing" constant="50" id="XkP-OS-HLF"/>
                             <constraint firstItem="MZn-mo-JuM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jBn-PX-wSz"/>
                             <constraint firstItem="x2j-HW-PJC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kyG-uR-d9h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nVq-D5-bhs" secondAttribute="trailing" constant="100" id="mZV-oh-gWM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MZn-mo-JuM" secondAttribute="trailing" constant="16" id="mhj-hz-5lt"/>
                             <constraint firstItem="x2j-HW-PJC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uhc-wA-5UY"/>
                         </constraints>
@@ -83,6 +97,75 @@
             </objects>
             <point key="canvasLocation" x="1389.8550724637682" y="122.54464285714285"/>
         </scene>
+        <!--How To Play View Controller-->
+        <scene sceneID="5v5-Yh-hHp">
+            <objects>
+                <viewController id="IIl-ut-cIP" customClass="HowToPlayViewController" customModule="Hokkaido" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I49-Cj-g3W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Road.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qb7-x5-jQD" customClass="AnimatableImageView" customModule="IBAnimatable">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="blurOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadeOpacity">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="toneOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="toneColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tintOpacity">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6OV-Yv-Ga0">
+                                <rect key="frame" x="46" y="167" width="321" height="567"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">〜遊び方〜
+
+広い北海道をどの程度踏破したのかを可視化するアプリです！
+
+地域ごとに
+4点：泊まったことがある
+3点：観光したことがある
+2点：降り立ったことがある
+1点：（飛行機以外で）通過したことがある
+0点：未踏
+
+で点数化し合計得点をを80点満点で表示します。
+あなたの北海道踏破力はどれくらい？
+ </string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qb7-x5-jQD" firstAttribute="top" secondItem="I49-Cj-g3W" secondAttribute="top" id="1xc-Kp-Tx9"/>
+                            <constraint firstItem="6OV-Yv-Ga0" firstAttribute="leading" secondItem="MBU-GI-eGV" secondAttribute="leading" constant="46" id="WQ4-i0-e7c"/>
+                            <constraint firstItem="MBU-GI-eGV" firstAttribute="bottom" secondItem="6OV-Yv-Ga0" secondAttribute="bottom" constant="128" id="XFJ-IN-O5c"/>
+                            <constraint firstItem="6OV-Yv-Ga0" firstAttribute="top" secondItem="MBU-GI-eGV" secondAttribute="top" constant="79" id="gdx-l4-86p"/>
+                            <constraint firstItem="6OV-Yv-Ga0" firstAttribute="centerX" secondItem="qb7-x5-jQD" secondAttribute="centerX" id="hbO-bF-yYA"/>
+                            <constraint firstAttribute="bottom" secondItem="qb7-x5-jQD" secondAttribute="bottom" id="kfD-BL-gfD"/>
+                            <constraint firstItem="qb7-x5-jQD" firstAttribute="leading" secondItem="MBU-GI-eGV" secondAttribute="leading" id="qyn-Dt-WkA"/>
+                            <constraint firstItem="qb7-x5-jQD" firstAttribute="trailing" secondItem="MBU-GI-eGV" secondAttribute="trailing" id="rB5-Vm-JlD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MBU-GI-eGV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rye-kM-iCU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gkV-zS-fum" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1398.5507246376812" y="1108.9285714285713"/>
+        </scene>
         <!--Map View Controller-->
         <scene sceneID="rY5-BG-UUi">
             <objects>
@@ -91,27 +174,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAJ-Vk-79D">
-                                <rect key="frame" x="68" y="706" width="279" height="75"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Road.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hEH-3K-yTM" customClass="AnimatableImageView" customModule="IBAnimatable">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="blurOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadeOpacity">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="toneOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="toneColor">
+                                        <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tintOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAJ-Vk-79D">
+                                <rect key="frame" x="68" y="742" width="278" height="90"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="23"/>
-                                <state key="normal" title="マップを編集">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="T2s-cE-qAe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
+                                <state key="normal" title="Edit...">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="o8a-cX-JVD" kind="show" id="9wS-mz-Aud"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hokkaidomap" translatesAutoresizingMaskIntoConstraints="NO" id="51O-f5-VmT">
-                                <rect key="frame" x="20" y="88" width="374" height="610"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hokkaidomap" translatesAutoresizingMaskIntoConstraints="NO" id="51O-f5-VmT">
+                                <rect key="frame" x="20" y="88" width="374" height="646"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfI-5g-Emm">
-                                <rect key="frame" x="49" y="144" width="183" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KJ-sR-Fhx">
+                                <rect key="frame" x="266" y="102" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="70"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="函館" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DmS-BP-UgC">
@@ -254,15 +360,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="scoreNum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KJ-sR-Fhx">
-                                <rect key="frame" x="252" y="127" width="90" height="90"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfI-5g-Emm">
+                                <rect key="frame" x="30" y="124" width="228" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="4" height="5"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="51O-f5-VmT" firstAttribute="top" secondItem="A3m-Rt-Jtk" secondAttribute="top" id="NG6-6c-7VI"/>
+                            <constraint firstItem="dAJ-Vk-79D" firstAttribute="top" secondItem="51O-f5-VmT" secondAttribute="bottom" constant="8" id="RR3-Ue-MZr"/>
+                            <constraint firstItem="51O-f5-VmT" firstAttribute="leading" secondItem="A3m-Rt-Jtk" secondAttribute="leading" constant="20" id="VhN-bP-C1M"/>
+                            <constraint firstItem="dAJ-Vk-79D" firstAttribute="leading" secondItem="A3m-Rt-Jtk" secondAttribute="leading" constant="68" id="Zeh-9l-OR6"/>
+                            <constraint firstItem="A3m-Rt-Jtk" firstAttribute="trailing" secondItem="dAJ-Vk-79D" secondAttribute="trailing" constant="68" id="fnn-4P-p0W"/>
+                            <constraint firstItem="A3m-Rt-Jtk" firstAttribute="bottom" secondItem="dAJ-Vk-79D" secondAttribute="bottom" constant="30" id="i1b-Ej-aNB"/>
+                            <constraint firstItem="A3m-Rt-Jtk" firstAttribute="trailing" secondItem="51O-f5-VmT" secondAttribute="trailing" constant="20" id="ppW-FU-zly"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="A3m-Rt-Jtk"/>
                     </view>
                     <navigationItem key="navigationItem" id="NdF-h7-dSs"/>
@@ -294,76 +411,6 @@
             </objects>
             <point key="canvasLocation" x="2334.7826086956525" y="126.5625"/>
         </scene>
-        <!--地域選択-->
-        <scene sceneID="hKG-dx-clr">
-            <objects>
-                <viewController id="Atr-4u-UIl" customClass="RegionViewController" customModule="Hokkaido" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ILR-qF-acS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJu-SB-DJY">
-                                <rect key="frame" x="227" y="267" width="126" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="道東">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="QTf-aV-g6y" kind="show" id="ZWN-xE-Epr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nte-xr-xpp">
-                                <rect key="frame" x="147" y="180" width="83" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="道北">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ic6-jB-VJc">
-                                <rect key="frame" x="195" y="368" width="67" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="十勝">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="GpF-vc-Wz1" kind="show" id="hIj-Tj-TMd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRW-zf-cpM">
-                                <rect key="frame" x="109" y="267" width="121" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="道央">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="tFh-z3-xOM" kind="show" id="wCs-gD-mvC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poj-5M-6rz">
-                                <rect key="frame" x="47" y="336" width="68" height="101"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="道南">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="7av-ty-taf" kind="show" id="In1-n0-kIF"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="saU-mq-9cS"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="地域選択" id="UWj-Xj-wAW"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8m6-Xl-FQ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3233" y="541"/>
-        </scene>
         <!--Dohoku View Controller-->
         <scene sceneID="40H-a6-Xhm">
             <objects>
@@ -372,10 +419,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Road.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MTd-RY-Dcz" customClass="AnimatableImageView" customModule="IBAnimatable">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="blurOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadeOpacity">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="toneOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="toneColor">
+                                        <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tintOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uk2-F3-b9s">
                                 <rect key="frame" x="0.0" y="88" width="414" height="785"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" red="0.89537801304011766" green="0.25423587152517663" blue="0.34111172542649737" alpha="0.9825594190140845" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DohokuCell" rowHeight="65" id="yfl-FO-6p4" customClass="DohokuCell" customModule="Hokkaido" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="65"/>
@@ -384,22 +453,34 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvv-4c-IHr">
-                                                    <rect key="frame" x="10" y="7" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvv-4c-IHr">
+                                                    <rect key="frame" x="10" y="7.5" width="2500" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="AZj-Fi-pe7"/>
+                                                        <constraint firstAttribute="width" constant="50" id="dl4-Oo-bEA"/>
+                                                        <constraint firstAttribute="width" secondItem="jvv-4c-IHr" secondAttribute="height" multiplier="50:1" id="kLq-h4-0X4"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="region" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuL-N0-oV4">
-                                                    <rect key="frame" x="88" y="22" width="238" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="region" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuL-N0-oV4">
+                                                    <rect key="frame" x="90" y="20" width="54" height="25"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="jvv-4c-IHr" firstAttribute="leading" secondItem="nmp-1d-LgU" secondAttribute="leading" constant="10" id="2xS-r9-4Nw"/>
+                                                <constraint firstItem="KuL-N0-oV4" firstAttribute="leading" secondItem="nmp-1d-LgU" secondAttribute="leadingMargin" constant="70" id="3ik-jO-EH4"/>
+                                                <constraint firstItem="KuL-N0-oV4" firstAttribute="centerY" secondItem="nmp-1d-LgU" secondAttribute="centerY" id="XnD-E6-HAb"/>
+                                                <constraint firstItem="jvv-4c-IHr" firstAttribute="centerY" secondItem="nmp-1d-LgU" secondAttribute="centerY" id="zgv-JF-gM7"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="colorLabel" destination="jvv-4c-IHr" id="NgK-ql-exS"/>
                                             <outlet property="regionLabel" destination="KuL-N0-oV4" id="ydJ-Qv-TLT"/>
@@ -419,7 +500,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Jm-5e-4Ux" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4518.840579710145" y="-1402.2321428571429"/>
+            <point key="canvasLocation" x="3327.5362318840585" y="126.5625"/>
         </scene>
         <!--Next Dohoku View Controller-->
         <scene sceneID="VhK-wp-g04">
@@ -429,11 +510,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Road.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0JL-ec-yRw" customClass="AnimatableImageView" customModule="IBAnimatable">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="blurOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadeOpacity">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="toneOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="toneColor">
+                                        <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tintOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RegionName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAN-da-p6R">
-                                <rect key="frame" x="16" y="113" width="382" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="16" y="113" width="382" height="144"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="4" height="5"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Xpf-aj-mPO" customClass="AnimatableStackView" customModule="IBAnimatable">
                                 <rect key="frame" x="16" y="282" width="382" height="500"/>
@@ -446,7 +550,7 @@
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                                <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="value" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -461,7 +565,7 @@
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                                <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="value" red="1" green="0.80000000000000004" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -476,7 +580,7 @@
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                                <color key="value" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="value" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -491,7 +595,7 @@
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                                <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="value" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -506,7 +610,7 @@
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                                <color key="value" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                <color key="value" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -524,12 +628,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="oAN-da-p6R" firstAttribute="top" secondItem="lfd-tM-uBe" secondAttribute="top" constant="25" id="0yJ-i5-QGO"/>
                             <constraint firstItem="lfd-tM-uBe" firstAttribute="bottom" secondItem="Xpf-aj-mPO" secondAttribute="bottom" constant="80" id="3ON-Up-bg5"/>
-                            <constraint firstItem="oAN-da-p6R" firstAttribute="leading" secondItem="lfd-tM-uBe" secondAttribute="leading" constant="16" id="L0s-rG-cC6"/>
+                            <constraint firstItem="Xpf-aj-mPO" firstAttribute="top" secondItem="oAN-da-p6R" secondAttribute="bottom" constant="25" id="fLD-OP-1OS"/>
                             <constraint firstItem="lfd-tM-uBe" firstAttribute="trailing" secondItem="Xpf-aj-mPO" secondAttribute="trailing" constant="16" id="iDm-cp-RyG"/>
                             <constraint firstItem="Xpf-aj-mPO" firstAttribute="leading" secondItem="lfd-tM-uBe" secondAttribute="leading" constant="16" id="iLa-8q-ehE"/>
-                            <constraint firstItem="lfd-tM-uBe" firstAttribute="trailing" secondItem="oAN-da-p6R" secondAttribute="trailing" constant="16" id="qt2-5L-I5l"/>
+                            <constraint firstItem="oAN-da-p6R" firstAttribute="top" secondItem="lfd-tM-uBe" secondAttribute="top" constant="25" id="l3s-c0-G2t"/>
+                            <constraint firstItem="oAN-da-p6R" firstAttribute="leading" secondItem="lfd-tM-uBe" secondAttribute="leading" constant="16" id="mzd-be-c7l"/>
+                            <constraint firstItem="lfd-tM-uBe" firstAttribute="trailing" secondItem="oAN-da-p6R" secondAttribute="trailing" constant="16" id="yad-us-12k"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lfd-tM-uBe"/>
                     </view>
@@ -540,71 +645,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rXX-GK-v7C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5579.7101449275369" y="-1402.2321428571429"/>
-        </scene>
-        <!--Douou View Controller-->
-        <scene sceneID="OJx-qB-aWC">
-            <objects>
-                <viewController id="tFh-z3-xOM" customClass="DououViewController" customModule="Hokkaido" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8PD-py-cGL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="sT3-KL-uZA"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="W0L-8z-w0i"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7LU-d0-hwo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4520" y="-631"/>
-        </scene>
-        <!--Doto View Controller-->
-        <scene sceneID="bac-cr-2Au">
-            <objects>
-                <viewController id="QTf-aV-g6y" customClass="DotoViewController" customModule="Hokkaido" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DBX-RK-DlQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="DRc-KI-7vU"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="o1u-9R-7fk"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="92z-Mf-RXy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4520" y="129"/>
-        </scene>
-        <!--Donan View Controller-->
-        <scene sceneID="JX8-rs-khn">
-            <objects>
-                <viewController id="7av-ty-taf" customClass="DonanViewController" customModule="Hokkaido" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kbe-id-1bt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="QRR-aG-dYE"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="fbD-qT-KXJ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lEU-9k-lei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4464" y="1809"/>
-        </scene>
-        <!--Tokachi View Controller-->
-        <scene sceneID="Jbj-88-C3U">
-            <objects>
-                <viewController id="GpF-vc-Wz1" customClass="TokachiViewController" customModule="Hokkaido" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HDb-Jm-Ngb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="Oe3-Xy-iKg"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="UMO-aJ-BcO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P5y-aS-rO9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4502" y="908"/>
+            <point key="canvasLocation" x="4342" y="127"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QIJ-ww-NkS">
