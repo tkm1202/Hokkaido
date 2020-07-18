@@ -125,8 +125,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6OV-Yv-Ga0">
-                                <rect key="frame" x="46" y="167" width="321" height="567"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6OV-Yv-Ga0">
+                                <rect key="frame" x="30" y="79" width="354" height="601"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">〜遊び方〜
 
@@ -150,7 +150,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="qb7-x5-jQD" firstAttribute="top" secondItem="I49-Cj-g3W" secondAttribute="top" id="1xc-Kp-Tx9"/>
-                            <constraint firstItem="6OV-Yv-Ga0" firstAttribute="leading" secondItem="MBU-GI-eGV" secondAttribute="leading" constant="46" id="WQ4-i0-e7c"/>
+                            <constraint firstItem="MBU-GI-eGV" firstAttribute="trailing" secondItem="6OV-Yv-Ga0" secondAttribute="trailing" constant="30" id="SO3-mo-C1B"/>
+                            <constraint firstItem="6OV-Yv-Ga0" firstAttribute="leading" secondItem="MBU-GI-eGV" secondAttribute="leading" constant="30" id="WQ4-i0-e7c"/>
                             <constraint firstItem="MBU-GI-eGV" firstAttribute="bottom" secondItem="6OV-Yv-Ga0" secondAttribute="bottom" constant="128" id="XFJ-IN-O5c"/>
                             <constraint firstItem="6OV-Yv-Ga0" firstAttribute="top" secondItem="MBU-GI-eGV" secondAttribute="top" constant="79" id="gdx-l4-86p"/>
                             <constraint firstItem="6OV-Yv-Ga0" firstAttribute="centerX" secondItem="qb7-x5-jQD" secondAttribute="centerX" id="hbO-bF-yYA"/>
@@ -195,11 +196,283 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ekk-yz-EsL">
+                                <rect key="frame" x="0.0" y="248" width="414" height="400"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hokkaidomap" translatesAutoresizingMaskIntoConstraints="NO" id="51O-f5-VmT">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="4fZ-36-UDR"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mhf-6u-MWZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="稚内" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9OL-Xc-RtW">
+                                                <rect key="frame" x="132" y="35" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="CDH-u3-JBD"/>
+                                                    <constraint firstAttribute="height" constant="50" id="nWA-Kf-2Et"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="函館" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DmS-BP-UgC">
+                                                <rect key="frame" x="42" y="315" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="41f-0a-aQf"/>
+                                                    <constraint firstAttribute="width" constant="50" id="hHv-AH-oa8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="留萌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQJ-JF-KIg">
+                                                <rect key="frame" x="122" y="155" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="VsT-vX-qYn"/>
+                                                    <constraint firstAttribute="height" constant="50" id="bLF-30-PxP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="枝幸" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hP-kC-2xV">
+                                                <rect key="frame" x="172" y="75" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Gpf-tO-KIp"/>
+                                                    <constraint firstAttribute="width" constant="50" id="vc9-Yw-6bZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小樽" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nB3-ni-9vg">
+                                                <rect key="frame" x="62" y="205" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ApG-Wf-1R6"/>
+                                                    <constraint firstAttribute="width" constant="50" id="Kly-I3-ZP3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="知床" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47F-HV-caY">
+                                                <rect key="frame" x="302" y="135" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="KuE-6v-4jc"/>
+                                                    <constraint firstAttribute="height" constant="50" id="udT-B4-trh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="札幌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPx-u1-e65">
+                                                <rect key="frame" x="132" y="205" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="ndf-7H-K2o"/>
+                                                    <constraint firstAttribute="height" constant="50" id="uhp-9A-h9D"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="苫小牧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prO-he-hsg">
+                                                <rect key="frame" x="136.5" y="240" width="51" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="I8y-12-jhd"/>
+                                                    <constraint firstAttribute="width" constant="50.600000000000001" id="QMh-16-LOT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="室蘭" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeL-zs-iPe">
+                                                <rect key="frame" x="82" y="255" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="M8K-xP-Uql"/>
+                                                    <constraint firstAttribute="height" constant="50" id="Sgx-Yw-q2c"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="襟裳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gac-Jo-9mc">
+                                                <rect key="frame" x="202" y="255" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="kg5-Bg-bul"/>
+                                                    <constraint firstAttribute="width" constant="50" id="q5P-50-uWL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帯広" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqQ-ES-gvt">
+                                                <rect key="frame" x="212" y="215" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="2Yw-9u-p3S"/>
+                                                    <constraint firstAttribute="height" constant="50" id="iyv-tu-kTS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="旭川" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7LW-b8-7DE">
+                                                <rect key="frame" x="172" y="155" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="1NH-2a-ByX"/>
+                                                    <constraint firstAttribute="height" constant="50" id="exW-hN-OOW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="網走" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCx-dZ-Mhc">
+                                                <rect key="frame" x="257" y="140" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="5k7-3l-wCf"/>
+                                                    <constraint firstAttribute="width" constant="50" id="qNo-0d-hUa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="紋別" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDY-ih-Hox">
+                                                <rect key="frame" x="207" y="120" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="CDr-2d-Slg"/>
+                                                    <constraint firstAttribute="width" constant="50" id="j0z-Oj-5Cx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名寄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tte-n3-YR2">
+                                                <rect key="frame" x="132" y="95" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="RIv-0z-QeH"/>
+                                                    <constraint firstAttribute="width" constant="50" id="iyx-bx-Foj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="根室" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnX-SC-l7x">
+                                                <rect key="frame" x="312" y="205" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="R91-F6-cz3"/>
+                                                    <constraint firstAttribute="height" constant="50" id="oK9-rD-bvD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="釧路" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7w-YQ-3Cl">
+                                                <rect key="frame" x="262" y="205" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="844-Lw-QZD"/>
+                                                    <constraint firstAttribute="height" constant="50" id="aM0-Jq-g9v"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="標津" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxa-BS-Bnp">
+                                                <rect key="frame" x="312" y="175" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="6Y3-mA-Dyd"/>
+                                                    <constraint firstAttribute="width" constant="50" id="C9T-e5-lHc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="久遠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lx5-nB-FGn">
+                                                <rect key="frame" x="22" y="275" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Ds2-Qs-HCE"/>
+                                                    <constraint firstAttribute="width" constant="50" id="n28-pL-3qw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北見" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gp9-0m-0on">
+                                                <rect key="frame" x="232" y="175" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="GOK-I8-qBg"/>
+                                                    <constraint firstAttribute="height" constant="50" id="PWm-Wh-H09"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="prO-he-hsg" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="-45" id="15V-1P-ipQ"/>
+                                            <constraint firstItem="DmS-BP-UgC" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" constant="140" id="1w0-SD-pKK"/>
+                                            <constraint firstItem="prO-he-hsg" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" constant="65" id="2id-p4-b8I"/>
+                                            <constraint firstItem="7LW-b8-7DE" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" constant="-20" id="4yT-zw-7ZC"/>
+                                            <constraint firstItem="WqQ-ES-gvt" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="30" id="8hL-MH-bFZ"/>
+                                            <constraint firstItem="Gp9-0m-0on" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="50" id="9fA-wN-7L8"/>
+                                            <constraint firstItem="DmS-BP-UgC" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="-140" id="AsY-p6-jfg"/>
+                                            <constraint firstItem="vPx-u1-e65" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="-50" id="BYc-vU-YNL"/>
+                                            <constraint firstItem="E7w-YQ-3Cl" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="80" id="BnO-Ey-K0a"/>
+                                            <constraint firstItem="MnX-SC-l7x" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="130" id="HKi-Nt-ESN"/>
+                                            <constraint firstItem="Lx5-nB-FGn" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="-160" id="LFJ-u2-Yio"/>
+                                            <constraint firstItem="E7w-YQ-3Cl" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" constant="30" id="NZe-vV-g4K"/>
+                                            <constraint firstItem="Gac-Jo-9mc" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="20" id="Ngx-qP-Aa2"/>
+                                            <constraint firstItem="9OL-Xc-RtW" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="-50" id="Ntx-sc-Biq"/>
+                                            <constraint firstItem="Uxa-BS-Bnp" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="130" id="OIY-fU-2p5"/>
+                                            <constraint firstItem="BeL-zs-iPe" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="-100" id="Okk-hd-mYk"/>
+                                            <constraint firstItem="9OL-Xc-RtW" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" constant="-140" id="Thu-uJ-5C9"/>
+                                            <constraint firstItem="tte-n3-YR2" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" constant="-80" id="Uif-e8-Lnv"/>
+                                            <constraint firstItem="MnX-SC-l7x" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" constant="30" id="XMh-TW-6GH"/>
+                                            <constraint firstItem="nB3-ni-9vg" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" constant="30" id="Xfx-0C-gQe"/>
+                                            <constraint firstItem="Lx5-nB-FGn" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" constant="100" id="bUh-qF-pVe"/>
+                                            <constraint firstItem="jQJ-JF-KIg" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" constant="-20" id="cxB-pP-qFF"/>
+                                            <constraint firstItem="nB3-ni-9vg" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="-120" id="e9U-4S-OKQ"/>
+                                            <constraint firstItem="BeL-zs-iPe" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" constant="80" id="ejW-Ka-Ipw"/>
+                                            <constraint firstItem="WqQ-ES-gvt" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" constant="40" id="fAS-Eb-asD"/>
+                                            <constraint firstItem="0hP-kC-2xV" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="-10" id="h2U-Yj-Tod"/>
+                                            <constraint firstItem="zCx-dZ-Mhc" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" constant="-35" id="mmt-2H-iMc"/>
+                                            <constraint firstItem="LDY-ih-Hox" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="25" id="ovU-my-ns0"/>
+                                            <constraint firstItem="LDY-ih-Hox" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" constant="-55" id="q4Z-We-rU8"/>
+                                            <constraint firstItem="Gp9-0m-0on" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" id="raj-kB-k0s"/>
+                                            <constraint firstItem="47F-HV-caY" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" constant="-40" id="u3S-Hq-SGM"/>
+                                            <constraint firstItem="tte-n3-YR2" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="-50" id="u9h-C1-eGt"/>
+                                            <constraint firstItem="Uxa-BS-Bnp" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" id="uD5-oS-20O"/>
+                                            <constraint firstItem="jQJ-JF-KIg" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="-60" id="ubR-d2-reL"/>
+                                            <constraint firstItem="0hP-kC-2xV" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" constant="-100" id="ukT-3K-fZF"/>
+                                            <constraint firstItem="Gac-Jo-9mc" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" constant="80" id="v1z-U1-F7P"/>
+                                            <constraint firstItem="47F-HV-caY" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="120" id="wPl-5m-bcR"/>
+                                            <constraint firstItem="zCx-dZ-Mhc" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="75" id="x3A-eM-LGs"/>
+                                            <constraint firstItem="7LW-b8-7DE" firstAttribute="centerX" secondItem="Mhf-6u-MWZ" secondAttribute="centerX" constant="-10" id="xXj-OZ-jfb"/>
+                                            <constraint firstItem="vPx-u1-e65" firstAttribute="centerY" secondItem="Mhf-6u-MWZ" secondAttribute="centerY" constant="30" id="zkb-Pt-QkK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Sdn-y1-Nvy"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mhf-6u-MWZ" secondAttribute="trailing" id="XwO-Ln-K1q"/>
+                                    <constraint firstAttribute="trailing" secondItem="51O-f5-VmT" secondAttribute="trailing" id="YsO-Fn-EO7"/>
+                                    <constraint firstItem="51O-f5-VmT" firstAttribute="top" secondItem="Ekk-yz-EsL" secondAttribute="top" id="Zxu-uY-IF8"/>
+                                    <constraint firstItem="51O-f5-VmT" firstAttribute="leading" secondItem="Ekk-yz-EsL" secondAttribute="leading" id="hQJ-LH-Sxt"/>
+                                    <constraint firstAttribute="bottom" secondItem="51O-f5-VmT" secondAttribute="bottom" id="i0z-iY-jTP"/>
+                                    <constraint firstItem="Mhf-6u-MWZ" firstAttribute="leading" secondItem="Ekk-yz-EsL" secondAttribute="leading" id="iDT-UB-IJE"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mhf-6u-MWZ" secondAttribute="bottom" id="kP4-wL-tsi"/>
+                                    <constraint firstItem="Mhf-6u-MWZ" firstAttribute="top" secondItem="Ekk-yz-EsL" secondAttribute="top" id="o39-rX-Vqj"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAJ-Vk-79D">
-                                <rect key="frame" x="68" y="742" width="278" height="90"/>
+                                <rect key="frame" x="68" y="668" width="278" height="62"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="T2s-cE-qAe"/>
+                                    <constraint firstAttribute="height" constant="62" id="IiV-ku-7Bm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
                                 <state key="normal" title="Edit...">
@@ -209,180 +482,18 @@
                                     <segue destination="o8a-cX-JVD" kind="show" id="9wS-mz-Aud"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ekk-yz-EsL">
-                                <rect key="frame" x="0.0" y="190" width="414" height="552"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hokkaidomap" translatesAutoresizingMaskIntoConstraints="NO" id="51O-f5-VmT">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="552"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mhf-6u-MWZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="552"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="函館" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DmS-BP-UgC">
-                                                <rect key="frame" x="47" y="379" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="留萌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQJ-JF-KIg">
-                                                <rect key="frame" x="103" y="225" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="枝幸" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hP-kC-2xV">
-                                                <rect key="frame" x="190" y="153" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="小樽" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nB3-ni-9vg">
-                                                <rect key="frame" x="64" y="279" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="知床" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47F-HV-caY">
-                                                <rect key="frame" x="302" y="211" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="札幌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPx-u1-e65">
-                                                <rect key="frame" x="129" y="268" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="稚内" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9OL-Xc-RtW">
-                                                <rect key="frame" x="137" y="120" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="苫小牧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prO-he-hsg">
-                                                <rect key="frame" x="137" y="321" width="52" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="室蘭" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeL-zs-iPe">
-                                                <rect key="frame" x="79" y="327" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="襟裳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gac-Jo-9mc">
-                                                <rect key="frame" x="190" y="351" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="帯広" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqQ-ES-gvt">
-                                                <rect key="frame" x="197" y="292" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="旭川" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7LW-b8-7DE">
-                                                <rect key="frame" x="161" y="233" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="網走" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCx-dZ-Mhc">
-                                                <rect key="frame" x="261" y="221" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="紋別" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDY-ih-Hox">
-                                                <rect key="frame" x="219" y="205" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名寄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tte-n3-YR2">
-                                                <rect key="frame" x="148" y="181" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="根室" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnX-SC-l7x">
-                                                <rect key="frame" x="302" y="279" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="釧路" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7w-YQ-3Cl">
-                                                <rect key="frame" x="261" y="293" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="標津" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxa-BS-Bnp">
-                                                <rect key="frame" x="302" y="251" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="久遠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lx5-nB-FGn">
-                                                <rect key="frame" x="8" y="351" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="北見" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gp9-0m-0on">
-                                                <rect key="frame" x="219" y="249" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KJ-sR-Fhx">
+                                <rect key="frame" x="261" y="138" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Mhf-6u-MWZ" secondAttribute="trailing" id="66a-Zc-3RU"/>
-                                    <constraint firstAttribute="bottom" secondItem="51O-f5-VmT" secondAttribute="bottom" id="8lJ-z6-ew6"/>
-                                    <constraint firstItem="51O-f5-VmT" firstAttribute="leading" secondItem="Ekk-yz-EsL" secondAttribute="leading" id="Gy6-nJ-doP"/>
-                                    <constraint firstItem="51O-f5-VmT" firstAttribute="top" secondItem="Ekk-yz-EsL" secondAttribute="top" id="Jpo-CQ-DqA"/>
-                                    <constraint firstAttribute="trailing" secondItem="51O-f5-VmT" secondAttribute="trailing" id="LiM-Pe-8QA"/>
-                                    <constraint firstAttribute="bottom" secondItem="Mhf-6u-MWZ" secondAttribute="bottom" id="QRb-Es-66o"/>
-                                    <constraint firstItem="Mhf-6u-MWZ" firstAttribute="top" secondItem="Ekk-yz-EsL" secondAttribute="top" id="Tqw-u9-0Ji"/>
-                                    <constraint firstItem="Mhf-6u-MWZ" firstAttribute="leading" secondItem="Ekk-yz-EsL" secondAttribute="leading" id="qsQ-xj-bQs"/>
+                                    <constraint firstAttribute="width" constant="100" id="Cv0-k1-OyQ"/>
+                                    <constraint firstAttribute="height" constant="100" id="gRn-B0-JNY"/>
                                 </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KJ-sR-Fhx">
-                                <rect key="frame" x="325.5" y="103" width="38.5" height="87"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="70"/>
                                 <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Total Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfI-5g-Emm">
-                                <rect key="frame" x="51" y="116" width="216" height="66.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfI-5g-Emm">
+                                <rect key="frame" x="30" y="163" width="216" height="55"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -392,21 +503,17 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Ekk-yz-EsL" firstAttribute="leading" secondItem="A3m-Rt-Jtk" secondAttribute="leading" id="5Pc-zd-MTP"/>
-                            <constraint firstItem="BfI-5g-Emm" firstAttribute="leading" secondItem="A3m-Rt-Jtk" secondAttribute="leading" constant="50" id="IvX-DW-awj"/>
-                            <constraint firstItem="dAJ-Vk-79D" firstAttribute="top" secondItem="Ekk-yz-EsL" secondAttribute="bottom" id="N0q-U8-NOU"/>
-                            <constraint firstItem="BfI-5g-Emm" firstAttribute="top" secondItem="A3m-Rt-Jtk" secondAttribute="top" constant="36" id="ThR-rR-14p"/>
-                            <constraint firstItem="Ekk-yz-EsL" firstAttribute="top" secondItem="BfI-5g-Emm" secondAttribute="bottom" id="UU6-os-zVl"/>
-                            <constraint firstItem="5KJ-sR-Fhx" firstAttribute="leading" secondItem="BfI-5g-Emm" secondAttribute="trailing" constant="15" id="VW4-sg-LgW"/>
-                            <constraint firstItem="Ekk-yz-EsL" firstAttribute="top" secondItem="5KJ-sR-Fhx" secondAttribute="bottom" id="VqJ-V6-alr"/>
-                            <constraint firstItem="dAJ-Vk-79D" firstAttribute="leading" secondItem="A3m-Rt-Jtk" secondAttribute="leading" constant="68" id="Zeh-9l-OR6"/>
-                            <constraint firstItem="A3m-Rt-Jtk" firstAttribute="trailing" secondItem="dAJ-Vk-79D" secondAttribute="trailing" constant="68" id="fnn-4P-p0W"/>
-                            <constraint firstItem="A3m-Rt-Jtk" firstAttribute="bottom" secondItem="dAJ-Vk-79D" secondAttribute="bottom" constant="30" id="i1b-Ej-aNB"/>
-                            <constraint firstItem="5KJ-sR-Fhx" firstAttribute="leading" secondItem="BfI-5g-Emm" secondAttribute="trailing" constant="15" id="kqG-80-NGx"/>
-                            <constraint firstItem="5KJ-sR-Fhx" firstAttribute="top" secondItem="A3m-Rt-Jtk" secondAttribute="top" constant="15" id="tgi-cn-mh8"/>
-                            <constraint firstItem="Ekk-yz-EsL" firstAttribute="trailing" secondItem="A3m-Rt-Jtk" secondAttribute="trailing" id="uSf-uN-Lgf"/>
-                            <constraint firstItem="Ekk-yz-EsL" firstAttribute="top" secondItem="5KJ-sR-Fhx" secondAttribute="bottom" id="yZc-8w-cUi"/>
-                            <constraint firstItem="A3m-Rt-Jtk" firstAttribute="trailing" secondItem="5KJ-sR-Fhx" secondAttribute="trailing" constant="50" id="zJh-tc-L3P"/>
+                            <constraint firstItem="BfI-5g-Emm" firstAttribute="leading" secondItem="A3m-Rt-Jtk" secondAttribute="leading" constant="30" id="9nf-PX-5Il"/>
+                            <constraint firstItem="Ekk-yz-EsL" firstAttribute="top" secondItem="BfI-5g-Emm" secondAttribute="bottom" constant="30" id="BJs-CB-DNk"/>
+                            <constraint firstItem="Ekk-yz-EsL" firstAttribute="top" secondItem="5KJ-sR-Fhx" secondAttribute="bottom" constant="10" id="Bcv-Z9-Bwe"/>
+                            <constraint firstItem="dAJ-Vk-79D" firstAttribute="leading" secondItem="SXP-PO-LAr" secondAttribute="leadingMargin" constant="48" id="Esx-T6-fPj"/>
+                            <constraint firstItem="Ekk-yz-EsL" firstAttribute="centerX" secondItem="SXP-PO-LAr" secondAttribute="centerX" id="PG3-lJ-Apq"/>
+                            <constraint firstItem="dAJ-Vk-79D" firstAttribute="top" secondItem="Ekk-yz-EsL" secondAttribute="bottom" constant="20" id="eyq-Nl-7xU"/>
+                            <constraint firstItem="Ekk-yz-EsL" firstAttribute="leading" secondItem="A3m-Rt-Jtk" secondAttribute="leading" id="her-QA-sRg"/>
+                            <constraint firstItem="Ekk-yz-EsL" firstAttribute="centerY" secondItem="SXP-PO-LAr" secondAttribute="centerY" id="osz-Mz-Q07"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dAJ-Vk-79D" secondAttribute="trailing" constant="48" id="oxi-Yy-XwB"/>
+                            <constraint firstItem="5KJ-sR-Fhx" firstAttribute="leading" secondItem="BfI-5g-Emm" secondAttribute="trailing" constant="15" id="wFO-T2-Mpv"/>
+                            <constraint firstItem="Ekk-yz-EsL" firstAttribute="trailing" secondItem="A3m-Rt-Jtk" secondAttribute="trailing" id="wTt-dS-4mf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="A3m-Rt-Jtk"/>
                     </view>
@@ -447,9 +554,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Road.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MTd-RY-Dcz" customClass="AnimatableImageView" customModule="IBAnimatable">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Road.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MTd-RY-Dcz" customClass="AnimatableImageView" customModule="IBAnimatable">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="blurOpacity">
                                         <real key="value" value="0.29999999999999999"/>
@@ -464,13 +570,12 @@
                                         <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="tintOpacity">
-                                        <real key="value" value="0.5"/>
+                                        <real key="value" value="0.29999999999999999"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uk2-F3-b9s">
-                                <rect key="frame" x="0.0" y="88" width="414" height="785"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uk2-F3-b9s">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" red="0.89537801304011766" green="0.25423587152517663" blue="0.34111172542649737" alpha="0.9825594190140845" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
@@ -482,11 +587,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvv-4c-IHr">
-                                                    <rect key="frame" x="10" y="7.5" width="2500" height="50"/>
+                                                    <rect key="frame" x="10" y="7.5" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="AZj-Fi-pe7"/>
                                                         <constraint firstAttribute="width" constant="50" id="dl4-Oo-bEA"/>
-                                                        <constraint firstAttribute="width" secondItem="jvv-4c-IHr" secondAttribute="height" multiplier="50:1" id="kLq-h4-0X4"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -518,6 +622,16 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MTd-RY-Dcz" firstAttribute="leading" secondItem="kFr-ch-fib" secondAttribute="leading" id="33C-Y5-ATz"/>
+                            <constraint firstItem="MTd-RY-Dcz" firstAttribute="top" secondItem="o8a-Cu-d4l" secondAttribute="top" id="ZyV-wn-OjQ"/>
+                            <constraint firstItem="MTd-RY-Dcz" firstAttribute="trailing" secondItem="kFr-ch-fib" secondAttribute="trailing" id="eFs-Ct-cRh"/>
+                            <constraint firstAttribute="bottom" secondItem="MTd-RY-Dcz" secondAttribute="bottom" id="ek7-Si-9w8"/>
+                            <constraint firstAttribute="bottom" secondItem="uk2-F3-b9s" secondAttribute="bottom" id="mXD-dA-ZAL"/>
+                            <constraint firstItem="uk2-F3-b9s" firstAttribute="trailing" secondItem="kFr-ch-fib" secondAttribute="trailing" id="mxX-MQ-FPz"/>
+                            <constraint firstItem="uk2-F3-b9s" firstAttribute="top" secondItem="kFr-ch-fib" secondAttribute="top" id="rIp-Ff-CRu"/>
+                            <constraint firstItem="uk2-F3-b9s" firstAttribute="leading" secondItem="kFr-ch-fib" secondAttribute="leading" id="ruC-Td-IG5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kFr-ch-fib"/>
                     </view>
                     <navigationItem key="navigationItem" id="HTV-BZ-36p"/>
