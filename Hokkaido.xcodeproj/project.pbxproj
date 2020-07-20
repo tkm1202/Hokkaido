@@ -35,7 +35,6 @@
 		C37F547D24C5CC7800716D3E /* Icon-App-76x76@1x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C37F546E24C5CC7800716D3E /* Icon-App-76x76@1x.jpg */; };
 		C37F547E24C5CC7800716D3E /* Icon-App-40x40@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C37F546F24C5CC7800716D3E /* Icon-App-40x40@3x.jpg */; };
 		C37F547F24C5CC7800716D3E /* Icon-App-29x29@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C37F547024C5CC7800716D3E /* Icon-App-29x29@2x.jpg */; };
-		C3C24296248D463B007CEFB7 /* LaunchPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = C3C24295248D463B007CEFB7 /* LaunchPhoto.png */; };
 		C3C2429E248D51FB007CEFB7 /* Road.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3C2429D248D51FB007CEFB7 /* Road.jpg */; };
 		C3C242A0248D58DD007CEFB7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C2429F248D58DD007CEFB7 /* MapViewController.swift */; };
 		C3C242B4248EBD13007CEFB7 /* DohokuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C242B3248EBD13007CEFB7 /* DohokuViewController.swift */; };
@@ -74,7 +73,6 @@
 		C37F546E24C5CC7800716D3E /* Icon-App-76x76@1x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Icon-App-76x76@1x.jpg"; sourceTree = "<group>"; };
 		C37F546F24C5CC7800716D3E /* Icon-App-40x40@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Icon-App-40x40@3x.jpg"; sourceTree = "<group>"; };
 		C37F547024C5CC7800716D3E /* Icon-App-29x29@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Icon-App-29x29@2x.jpg"; sourceTree = "<group>"; };
-		C3C24295248D463B007CEFB7 /* LaunchPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchPhoto.png; sourceTree = "<group>"; };
 		C3C2429D248D51FB007CEFB7 /* Road.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Road.jpg; sourceTree = "<group>"; };
 		C3C2429F248D58DD007CEFB7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C3C242B3248EBD13007CEFB7 /* DohokuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DohokuViewController.swift; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 				C34099C12486839900686DE6 /* Main.storyboard */,
 				C34099C42486839A00686DE6 /* Assets.xcassets */,
 				C3C2429D248D51FB007CEFB7 /* Road.jpg */,
-				C3C24295248D463B007CEFB7 /* LaunchPhoto.png */,
 				76D545A524BF695900F08FE0 /* gomarice_mukasi_mukasi.ttf */,
 				C336CBE224C3540000EB2A23 /* hokkaidoicon.png */,
 				C34099C62486839A00686DE6 /* LaunchScreen.storyboard */,
@@ -264,7 +261,6 @@
 				C336CBE324C3540000EB2A23 /* hokkaidoicon.png in Resources */,
 				C37F547924C5CC7800716D3E /* Icon-App-29x29@3x.jpg in Resources */,
 				C37F547824C5CC7800716D3E /* Icon-App-20x20@2x.jpg in Resources */,
-				C3C24296248D463B007CEFB7 /* LaunchPhoto.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
