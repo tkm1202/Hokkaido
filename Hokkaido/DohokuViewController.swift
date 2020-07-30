@@ -43,7 +43,28 @@ class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewData
         "Donan" : Array<Int>(repeating: 0, count:4)])
  */
         //0:white--4:red
+        DohokuColorArray = UserDefaults.standard.array(forKey: "Dohoku") as! [Int]
+        DotoColorArray = UserDefaults.standard.array(forKey: "Doto") as! [Int]
+        TokachiColorArray = UserDefaults.standard.array(forKey: "Tokachi") as! [Int]
+        DououColorArray = UserDefaults.standard.array(forKey: "Douou") as! [Int]
+        DonanColorArray = UserDefaults.standard.array(forKey: "Donan") as! [Int]
       
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+           self.navigationController!.navigationBar.shadowImage = UIImage()
+        
+        navigationController?.isNavigationBarHidden = false
+        
+        DohokuColorArray = UserDefaults.standard.array(forKey: "Dohoku") as! [Int]
+        DotoColorArray = UserDefaults.standard.array(forKey: "Doto") as! [Int]
+        TokachiColorArray = UserDefaults.standard.array(forKey: "Tokachi") as! [Int]
+        DououColorArray = UserDefaults.standard.array(forKey: "Douou") as! [Int]
+        DonanColorArray = UserDefaults.standard.array(forKey: "Donan") as! [Int]
+        print("DohokuColorArray : \(DohokuColorArray)")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,6 +81,7 @@ class DohokuViewController: UIViewController,UITableViewDelegate,UITableViewData
         DououColorArray = UserDefaults.standard.array(forKey: "Douou") as! [Int]
         DonanColorArray = UserDefaults.standard.array(forKey: "Donan") as! [Int]
         print("DohokuColorArray : \(DohokuColorArray)")
+        dohokuTableView.reloadData()
         
     }
     
