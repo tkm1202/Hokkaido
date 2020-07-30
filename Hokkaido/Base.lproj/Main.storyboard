@@ -674,7 +674,10 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RegionName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAN-da-p6R">
-                                <rect key="frame" x="16" y="113" width="382" height="144"/>
+                                <rect key="frame" x="16" y="237" width="382" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="de0-BL-tHl"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -682,7 +685,7 @@
                                 <size key="shadowOffset" width="4" height="5"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Xpf-aj-mPO" customClass="AnimatableStackView" customModule="IBAnimatable">
-                                <rect key="frame" x="16" y="282" width="382" height="500"/>
+                                <rect key="frame" x="16" y="312" width="382" height="500"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTI-mk-2d0" customClass="AnimatableButton" customModule="IBAnimatable">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="100"/>
@@ -770,11 +773,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="lfd-tM-uBe" firstAttribute="bottom" secondItem="Xpf-aj-mPO" secondAttribute="bottom" constant="80" id="3ON-Up-bg5"/>
+                            <constraint firstItem="lfd-tM-uBe" firstAttribute="bottom" secondItem="Xpf-aj-mPO" secondAttribute="bottom" constant="50" id="3ON-Up-bg5"/>
                             <constraint firstItem="Xpf-aj-mPO" firstAttribute="top" secondItem="oAN-da-p6R" secondAttribute="bottom" constant="25" id="fLD-OP-1OS"/>
                             <constraint firstItem="lfd-tM-uBe" firstAttribute="trailing" secondItem="Xpf-aj-mPO" secondAttribute="trailing" constant="16" id="iDm-cp-RyG"/>
                             <constraint firstItem="Xpf-aj-mPO" firstAttribute="leading" secondItem="lfd-tM-uBe" secondAttribute="leading" constant="16" id="iLa-8q-ehE"/>
-                            <constraint firstItem="oAN-da-p6R" firstAttribute="top" secondItem="lfd-tM-uBe" secondAttribute="top" constant="25" id="l3s-c0-G2t"/>
                             <constraint firstItem="oAN-da-p6R" firstAttribute="leading" secondItem="lfd-tM-uBe" secondAttribute="leading" constant="16" id="mzd-be-c7l"/>
                             <constraint firstItem="lfd-tM-uBe" firstAttribute="trailing" secondItem="oAN-da-p6R" secondAttribute="trailing" constant="16" id="yad-us-12k"/>
                         </constraints>
